@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GDG on Campus – Rajeev Institute of Technology, Hassan. A Google Developer Group chapter empowering students through technology, innovation and community." />
+  <meta property="og:title" content="GDG on Campus – RIT Hassan" />
+  <meta property="og:description" content="Learn Together. Build Together. Grow Together. Join the GDG community at RIT Hassan." />
+  <title>GDG on Campus – RIT Hassan | Google Developer Groups</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <a href="#home" class="nav-brand">
+        <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG on Campus RIT Hassan" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-gdg">GDG on Campus</span>
+          <span class="brand-rit">RIT Hassan</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#community" class="nav-link">Community</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://chat.whatsapp.com/Ep2J8GpmRBoF0Fj3A5eks1" target="_blank" class="btn btn-join">Join Community</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <!-- Animated background -->
+    <div class="hero-bg">
+      <div class="bg-grid"></div>
+      <div class="orb orb-blue"></div>
+      <div class="orb orb-red"></div>
+      <div class="orb orb-yellow"></div>
+      <div class="orb orb-green"></div>
+      <div class="floating-shapes" id="floatingShapes"></div>
+    </div>
+
+    <div class="hero-inner">
+      <!-- Org Logos Bar -->
+      <div class="org-bar" data-aos="fade-down">
+        <div class="org-item">
+          <img src="assets/Clg-Logo.jpeg" alt="Rajeev Institute of Technology Hassan" />
+          <span>Rajeev Institute of Technology</span>
+        </div>
+        <span class="org-sep">×</span>
+        <div class="org-item">
+          <img src="assets/Dept-Logo.jpeg" alt="CSE Department" />
+          <span>Dept. of CSE</span>
+        </div>
+        <span class="org-sep">×</span>
+        <div class="org-item gdg-org">
+          <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG on Campus" />
+          <span>GDG on Campus</span>
+        </div>
+      </div>
+
+      <!-- Google Colors Dot Row -->
+      <div class="gdg-dots" data-aos="fade-up" data-aos-delay="50">
+        <span class="dot dot-blue"></span>
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+
+      <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG" class="badge-logo" />
+        Google Developer Groups on Campus
+      </div>
+
+      <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="150">
+        <span class="h-blue">Learn</span>
+        <span class="h-sep">·</span>
+        <span class="h-red">Build</span>
+        <span class="h-sep">·</span>
+        <span class="h-yellow">Share</span>
+        <span class="h-sep">·</span>
+        <span class="h-green">Grow</span>
+      </h1>
+
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">
+        Welcome to <strong>GDG on Campus – Rajeev Institute of Technology, Hassan</strong>.<br />
+        A community where students explore technology, build innovative projects, and grow together.
+      </p>
+
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://chat.whatsapp.com/Ep2J8GpmRBoF0Fj3A5eks1" target="_blank" class="btn btn-primary" id="join-community-btn">
+          <i class="fab fa-whatsapp"></i> Join Our Community
+        </a>
+        <a href="#events" class="btn btn-ghost" id="view-events-btn">
+          <i class="fas fa-calendar-alt"></i> View Events
+        </a>
+        <a href="https://www.instagram.com/gdg_club_rit/" target="_blank" class="btn btn-insta" id="instagram-btn">
+          <i class="fab fa-instagram"></i> Follow Us
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-box">
+          <span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Events</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Active</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">Google Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="gdg-pill"><span class="pill-blue">G</span><span class="pill-red">D</span><span class="pill-yellow">G</span> About</div>
+        <h2>What is <span class="google-gradient">GDG on Campus?</span></h2>
+        <p>Google Developer Groups on Campus are university-based communities supported by Google, bringing Google's developer ecosystem directly to students.</p>
+      </div>
+
+      <div class="about-flex">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="gdg-logo-big">
+            <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG on Campus RIT Hassan" />
+          </div>
+          <div class="about-org-stack">
+            <div class="aorg-card">
+              <img src="assets/Clg-Logo.jpeg" alt="RIT Hassan" />
+              <div>
+                <strong>Rajeev Institute of Technology</strong>
+                <span>Hassan, Karnataka</span>
+              </div>
+            </div>
+            <div class="aorg-card">
+              <img src="assets/Dept-Logo.jpeg" alt="CSE" />
+              <div>
+                <strong>Dept. of Computer Science</strong>
+                <span>& Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h3>Our Story</h3>
+          <p>GDG on Campus – RIT Hassan is a student-led technology community at Rajeev Institute of Technology, Hassan, affiliated with Google Developer Groups. We empower students to explore modern technologies, build real projects, and connect with the global developer ecosystem.</p>
+          <p>Our community fosters innovation, creativity, and collaboration among students across all disciplines — not just computer science.</p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="hi-icon" style="background: rgba(66,133,244,0.15); color: #4285f4">
+                <i class="fab fa-google"></i>
+              </div>
+              <div>
+                <strong>Google Supported</strong>
+                <span>Official Google Developer Group chapter on campus</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon" style="background: rgba(234,67,53,0.12); color: #ea4335">
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <strong>Student-Led</strong>
+                <span>Run entirely by passionate student volunteers</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon" style="background: rgba(52,168,83,0.12); color: #34a853">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <strong>Hands-on Learning</strong>
+                <span>Workshops, hackathons, and real project experience</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon" style="background: rgba(251,188,5,0.12); color: #fbbc05">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>
+                <strong>Global Network</strong>
+                <span>Part of worldwide GDG developer community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission Cards -->
+      <div class="mission-cards" data-aos="fade-up" data-aos-delay="200">
+        <div class="mission-card mc-blue">
+          <i class="fas fa-lightbulb"></i>
+          <h4>Learn</h4>
+          <p>Explore Google technologies through workshops, talks, and study groups led by peers and industry experts.</p>
+        </div>
+        <div class="mission-card mc-red">
+          <i class="fas fa-hammer"></i>
+          <h4>Build</h4>
+          <p>Apply knowledge by developing real projects, participating in hackathons, and creating solutions that matter.</p>
+        </div>
+        <div class="mission-card mc-yellow">
+          <i class="fas fa-share-alt"></i>
+          <h4>Share</h4>
+          <p>Share knowledge, experiences, and projects with the community. Mentor others and grow together.</p>
+        </div>
+        <div class="mission-card mc-green">
+          <i class="fas fa-seedling"></i>
+          <h4>Grow</h4>
+          <p>Build professional skills, networks, and confidence for a successful career in technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section class="section events-section" id="events">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="gdg-pill"><i class="fas fa-calendar-star"></i> Events</div>
+        <h2>Our <span class="google-gradient">Events</span></h2>
+        <p>From workshops to hackathons — we regularly host events to help students learn, build, and connect.</p>
+      </div>
+
+      <!-- Featured Event: CODESTORM 2026 -->
+      <div class="featured-event glass-card" data-aos="zoom-in">
+        <div class="fe-badge"><i class="fas fa-bolt"></i> Featured Event</div>
+        <div class="fe-inner">
+          <div class="fe-info">
+            <span class="fe-label">November Edition · 2026</span>
+            <h3 class="fe-title">
+              <span class="code-bracket">&lt;</span>CODE<span class="storm-text">STORM</span><span class="code-bracket">/&gt;</span> 2026
+            </h3>
+            <p class="fe-desc">A community-driven technical challenge with two exciting tracks — Website Building and Real-World Problem Solving. Open to all students, beginner to advanced.</p>
+
+            <div class="fe-challenges">
+              <div class="fe-ch">
+                <div class="fe-ch-icon ch-blue"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <strong>Challenge 01</strong>
+                  <span>Website Building Challenge</span>
+                </div>
+              </div>
+              <div class="fe-ch">
+                <div class="fe-ch-icon ch-purple"><i class="fas fa-lightbulb"></i></div>
+                <div>
+                  <strong>Challenge 02</strong>
+                  <span>Real-World Problem & Solution</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fe-actions">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiNUxgTFl5OUxDKGxGDlW-bbP6dp5K-6jYpWEdOtIbNw8vig/viewform" target="_blank" class="btn btn-primary" id="codestorm-register-btn">
+                <i class="fas fa-rocket"></i> Register Now
+              </a>
+              <a href="https://chat.whatsapp.com/IbvN7a5LEGpGqVoffjDWPw" target="_blank" class="btn btn-ghost" id="codestorm-wa-btn">
+                <i class="fab fa-whatsapp"></i> Join Event Group
+              </a>
+            </div>
+          </div>
+          <div class="fe-visual">
+            <div class="codestorm-badge">
+              <span class="csb-code">&lt;/&gt;</span>
+              <span class="csb-title">CODESTORM</span>
+              <span class="csb-year">2026</span>
+              <div class="csb-dots">
+                <span style="background:#4285f4"></span>
+                <span style="background:#ea4335"></span>
+                <span style="background:#fbbc05"></span>
+                <span style="background:#34a853"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Event Types -->
+      <div class="events-grid">
+        <div class="event-card glass-card" data-aos="fade-up" data-aos-delay="100" id="event-workshops">
+          <div class="event-icon" style="--ec: #4285f4">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <div class="event-tag" style="color:#4285f4; background:rgba(66,133,244,0.1)">Workshop</div>
+          <h4>Tech Workshops</h4>
+          <p>Hands-on sessions on web development, Android, Cloud, ML and more — taught by students for students.</p>
+          <div class="event-meta">
+            <span><i class="fas fa-users"></i> Open to all</span>
+            <span><i class="fas fa-clock"></i> Regular</span>
+          </div>
+        </div>
+
+        <div class="event-card glass-card" data-aos="fade-up" data-aos-delay="200" id="event-hackathon">
+          <div class="event-icon" style="--ec: #ea4335">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="event-tag" style="color:#ea4335; background:rgba(234,67,53,0.1)">Hackathon</div>
+          <h4>Hackathons</h4>
+          <p>Competitive coding events where teams build innovative solutions to real-world challenges in limited time.</p>
+          <div class="event-meta">
+            <span><i class="fas fa-users"></i> Team / Individual</span>
+            <span><i class="fas fa-trophy"></i> With prizes</span>
+          </div>
+        </div>
+
+        <div class="event-card glass-card" data-aos="fade-up" data-aos-delay="300" id="event-talks">
+          <div class="event-icon" style="--ec: #fbbc05">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="event-tag" style="color:#e09d00; background:rgba(251,188,5,0.1)">Tech Talk</div>
+          <h4>Speaker Sessions</h4>
+          <p>Inspiring talks from industry professionals, Googlers, and experienced developers sharing their journeys.</p>
+          <div class="event-meta">
+            <span><i class="fas fa-users"></i> All welcome</span>
+            <span><i class="fas fa-star"></i> Insightful</span>
+          </div>
+        </div>
+
+        <div class="event-card glass-card" data-aos="fade-up" data-aos-delay="400" id="event-studyjam">
+          <div class="event-icon" style="--ec: #34a853">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="event-tag" style="color:#34a853; background:rgba(52,168,83,0.1)">Study Jam</div>
+          <h4>Google Study Jams</h4>
+          <p>Collaborative learning sessions using Google's learning pathways — Codelabs, Cloud Skills Boost and more.</p>
+          <div class="event-meta">
+            <span><i class="fab fa-google"></i> Google Certified</span>
+            <span><i class="fas fa-certificate"></i> Badges</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section class="section programs-section" id="programs">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="gdg-pill"><i class="fas fa-layer-group"></i> Programs</div>
+        <h2>Google <span class="google-gradient">Technologies</span> We Cover</h2>
+        <p>Explore the Google developer ecosystem through our structured learning programs and workshops.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="100" id="prog-web">
+          <div class="prog-header" style="--pc: #4285f4">
+            <i class="fas fa-globe"></i>
+            <span>Web Development</span>
+          </div>
+          <ul class="prog-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>React & Next.js</li>
+            <li>Firebase Hosting</li>
+            <li>Progressive Web Apps</li>
+            <li>Google Maps Platform</li>
+          </ul>
+        </div>
+
+        <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="200" id="prog-cloud">
+          <div class="prog-header" style="--pc: #ea4335">
+            <i class="fas fa-cloud"></i>
+            <span>Cloud & Firebase</span>
+          </div>
+          <ul class="prog-list">
+            <li>Google Cloud Platform</li>
+            <li>Firebase Authentication</li>
+            <li>Firestore Database</li>
+            <li>Cloud Functions</li>
+            <li>Cloud Skills Boost</li>
+          </ul>
+        </div>
+
+        <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="300" id="prog-ai">
+          <div class="prog-header" style="--pc: #fbbc05">
+            <i class="fas fa-robot"></i>
+            <span>AI & Machine Learning</span>
+          </div>
+          <ul class="prog-list">
+            <li>Google AI Studio</li>
+            <li>Gemini API</li>
+            <li>TensorFlow & Keras</li>
+            <li>ML Kit for Mobile</li>
+            <li>Vertex AI</li>
+          </ul>
+        </div>
+
+        <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="400" id="prog-android">
+          <div class="prog-header" style="--pc: #34a853">
+            <i class="fab fa-android"></i>
+            <span>Android & Mobile</span>
+          </div>
+          <ul class="prog-list">
+            <li>Android Development</li>
+            <li>Kotlin & Jetpack</li>
+            <li>Flutter & Dart</li>
+            <li>Google Play</li>
+            <li>Material Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Solution Challenge CTA -->
+      <div class="solution-cta glass-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="sc-left">
+          <div class="sc-icon"><i class="fas fa-globe-americas"></i></div>
+          <div>
+            <h4>Google Solution Challenge</h4>
+            <p>Build solutions for the UN Sustainable Development Goals with Google technologies. Join our team for the annual challenge!</p>
+          </div>
+        </div>
+        <a href="https://developers.google.com/community/gdsc-solution-challenge" target="_blank" class="btn btn-primary" id="solution-challenge-btn">
+          <i class="fas fa-external-link-alt"></i> Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY ===== -->
+  <section class="section community-section" id="community">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="gdg-pill"><i class="fas fa-heart"></i> Community</div>
+        <h2>Join Our <span class="google-gradient">Community</span></h2>
+        <p>Connect with fellow developers, stay updated on events, and be part of the GDG family.</p>
+      </div>
+
+      <div class="community-grid">
+        <!-- WhatsApp -->
+        <div class="comm-card glass-card comm-wa" data-aos="fade-up" data-aos-delay="100" id="comm-whatsapp">
+          <div class="comm-platform">
+            <div class="comm-icon-wrap" style="background: #25d366">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4>WhatsApp Community</h4>
+              <span>Official GDG RIT Hassan Group</span>
+            </div>
+          </div>
+          <p>Join our main WhatsApp community for general updates, resources, and discussions.</p>
+          <a href="https://chat.whatsapp.com/Ep2J8GpmRBoF0Fj3A5eks1" target="_blank" class="comm-cta" id="wa-main-btn" style="--cc: #25d366">
+            <i class="fab fa-whatsapp"></i> Join GDG Community
+          </a>
+        </div>
+
+        <!-- Event Group -->
+        <div class="comm-card glass-card comm-event" data-aos="fade-up" data-aos-delay="200" id="comm-event-group">
+          <div class="comm-platform">
+            <div class="comm-icon-wrap" style="background: #4285f4">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div>
+              <h4>CODESTORM 2026 Group</h4>
+              <span>November Edition Event Group</span>
+            </div>
+          </div>
+          <p>Stay updated on CODESTORM 2026 announcements, deadlines, and event details.</p>
+          <a href="https://chat.whatsapp.com/IbvN7a5LEGpGqVoffjDWPw" target="_blank" class="comm-cta" id="wa-event-btn" style="--cc: #4285f4">
+            <i class="fab fa-whatsapp"></i> Join Event Group
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="comm-card glass-card comm-insta" data-aos="fade-up" data-aos-delay="300" id="comm-instagram">
+          <div class="comm-platform">
+            <div class="comm-icon-wrap" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div>
+              <h4>Instagram</h4>
+              <span>@gdg_club_rit</span>
+            </div>
+          </div>
+          <p>Follow us on Instagram for event highlights, photos, announcements, and behind-the-scenes moments.</p>
+          <a href="https://www.instagram.com/gdg_club_rit/" target="_blank" class="comm-cta" id="instagram-comm-btn" style="--cc: #e1306c">
+            <i class="fab fa-instagram"></i> Follow on Instagram
+          </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="comm-card glass-card comm-github" data-aos="fade-up" data-aos-delay="400" id="comm-github">
+          <div class="comm-platform">
+            <div class="comm-icon-wrap" style="background: #24292f">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <span>CODESTORM 2026 Repository</span>
+            </div>
+          </div>
+          <p>Explore our open-source projects and contribute to community repositories on GitHub.</p>
+          <a href="https://github.com/Yashawantha26/codestorm-2026" target="_blank" class="comm-cta" id="github-comm-btn" style="--cc: #f0f6fc">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Community Quote -->
+      <div class="community-quote" data-aos="fade-up" data-aos-delay="500">
+        <div class="quote-dots">
+          <span style="background:#4285f4"></span>
+          <span style="background:#ea4335"></span>
+          <span style="background:#fbbc05"></span>
+          <span style="background:#34a853"></span>
+        </div>
+        <blockquote>"Learn Together. Build Together. Grow Together."</blockquote>
+        <cite>— GDG on Campus · RIT Hassan</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="gdg-pill"><i class="fas fa-users"></i> Team</div>
+        <h2>Meet the <span class="google-gradient">Team</span></h2>
+        <p>Passionate students driving the GDG on Campus – RIT Hassan community forward.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Coordinator Card -->
+        <div class="team-card glass-card featured-member" data-aos="zoom-in" id="team-coordinator">
+          <div class="tm-avatar">
+            <div class="avatar-ring">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="gdg-badge-sm">
+              <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG" />
+            </div>
+          </div>
+          <h4>Yashawantha H M</h4>
+          <span class="tm-role tm-coordinator">Student Coordinator</span>
+          <p class="tm-org">GDG on Campus – RIT Hassan</p>
+          <p class="tm-org">Dept. of Computer Science & Engineering</p>
+          <div class="tm-socials">
+            <div class="tm-social-pill"><i class="fab fa-google"></i> GDG Leader</div>
+          </div>
+        </div>
+
+        <!-- Organizer cards -->
+        <div class="team-card glass-card" data-aos="fade-up" data-aos-delay="100" id="team-gdg">
+          <div class="tm-avatar sm-avatar">
+            <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG" class="org-avatar" />
+          </div>
+          <h4>GDG on Campus</h4>
+          <span class="tm-role tm-org-role">Community Organizer</span>
+          <p class="tm-org">Rajeev Institute of Technology</p>
+          <p class="tm-org">Hassan, Karnataka</p>
+        </div>
+
+        <div class="team-card glass-card" data-aos="fade-up" data-aos-delay="200" id="team-cse">
+          <div class="tm-avatar sm-avatar">
+            <img src="assets/Dept-Logo.jpeg" alt="CSE" class="org-avatar" />
+          </div>
+          <h4>Dept. of CSE</h4>
+          <span class="tm-role tm-dept-role">Academic Support</span>
+          <p class="tm-org">Computer Science</p>
+          <p class="tm-org">& Engineering</p>
+        </div>
+
+        <div class="team-card glass-card" data-aos="fade-up" data-aos-delay="300" id="team-rit">
+          <div class="tm-avatar sm-avatar">
+            <img src="assets/Clg-Logo.jpeg" alt="RIT" class="org-avatar" />
+          </div>
+          <h4>RIT Hassan</h4>
+          <span class="tm-role tm-inst-role">Host Institution</span>
+          <p class="tm-org">Rajeev Institute</p>
+          <p class="tm-org">of Technology, Hassan</p>
+        </div>
+      </div>
+
+      <div class="join-team-cta glass-card" data-aos="fade-up" data-aos-delay="400">
+        <h4><i class="fas fa-hand-wave"></i> Want to be part of the team?</h4>
+        <p>Join our community and contribute as a volunteer, speaker, organizer, or mentor. All students are welcome!</p>
+        <a href="https://chat.whatsapp.com/Ep2J8GpmRBoF0Fj3A5eks1" target="_blank" class="btn btn-primary" id="join-team-btn">
+          <i class="fab fa-whatsapp"></i> Get Involved
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="gdg-pill"><i class="fas fa-paper-plane"></i> Contact</div>
+        <h2>Get in <span class="google-gradient">Touch</span></h2>
+        <p>Have questions about GDG on Campus or our events? Reach out through any of our channels.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Links -->
+        <div class="contact-links-grid" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://gdg-rit-website.vercel.app/" target="_blank" class="cl-item" id="official-website-link">
+            <div class="cl-icon" style="background:rgba(66,133,244,0.15);color:#4285f4"><i class="fas fa-globe"></i></div>
+            <div class="cl-text">
+              <strong>Official Website</strong>
+              <span>gdg-rit-website.vercel.app</span>
+            </div>
+            <i class="fas fa-external-link-alt cl-arrow"></i>
+          </a>
+
+          <a href="https://www.instagram.com/gdg_club_rit/" target="_blank" class="cl-item" id="instagram-contact-link">
+            <div class="cl-icon" style="background:rgba(225,48,108,0.12);color:#e1306c"><i class="fab fa-instagram"></i></div>
+            <div class="cl-text">
+              <strong>Instagram</strong>
+              <span>@gdg_club_rit</span>
+            </div>
+            <i class="fas fa-external-link-alt cl-arrow"></i>
+          </a>
+
+          <a href="https://chat.whatsapp.com/Ep2J8GpmRBoF0Fj3A5eks1" target="_blank" class="cl-item" id="wa-contact-link">
+            <div class="cl-icon" style="background:rgba(37,211,102,0.12);color:#25d366"><i class="fab fa-whatsapp"></i></div>
+            <div class="cl-text">
+              <strong>GDG WhatsApp Community</strong>
+              <span>Join our main group</span>
+            </div>
+            <i class="fas fa-external-link-alt cl-arrow"></i>
+          </a>
+
+          <a href="https://chat.whatsapp.com/IbvN7a5LEGpGqVoffjDWPw" target="_blank" class="cl-item" id="wa-event-contact-link">
+            <div class="cl-icon" style="background:rgba(37,211,102,0.12);color:#25d366"><i class="fab fa-whatsapp"></i></div>
+            <div class="cl-text">
+              <strong>CODESTORM 2026 Group</strong>
+              <span>November Edition event group</span>
+            </div>
+            <i class="fas fa-external-link-alt cl-arrow"></i>
+          </a>
+
+          <a href="https://github.com/Yashawantha26/codestorm-2026" target="_blank" class="cl-item" id="github-contact-link">
+            <div class="cl-icon" style="background:rgba(240,246,252,0.08);color:#f0f6fc"><i class="fab fa-github"></i></div>
+            <div class="cl-text">
+              <strong>GitHub</strong>
+              <span>CODESTORM 2026 Repo</span>
+            </div>
+            <i class="fas fa-external-link-alt cl-arrow"></i>
+          </a>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiNUxgTFl5OUxDKGxGDlW-bbP6dp5K-6jYpWEdOtIbNw8vig/viewform" target="_blank" class="cl-item" id="register-contact-link">
+            <div class="cl-icon" style="background:rgba(66,133,244,0.12);color:#4285f4"><i class="fab fa-google"></i></div>
+            <div class="cl-text">
+              <strong>CODESTORM 2026 Registration</strong>
+              <span>Register via Google Forms</span>
+            </div>
+            <i class="fas fa-external-link-alt cl-arrow"></i>
+          </a>
+        </div>
+
+        <!-- Info Box -->
+        <div class="contact-info-box glass-card" data-aos="fade-left" data-aos-delay="200">
+          <div class="cib-logos">
+            <img src="assets/Clg-Logo.jpeg" alt="RIT" />
+            <img src="assets/Dept-Logo.jpeg" alt="CSE" />
+            <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG" />
+          </div>
+          <h4>GDG on Campus – RIT Hassan</h4>
+          <div class="cib-details">
+            <div class="cib-row">
+              <i class="fas fa-university" style="color:#4285f4"></i>
+              <span>Rajeev Institute of Technology, Hassan</span>
+            </div>
+            <div class="cib-row">
+              <i class="fas fa-microchip" style="color:#ea4335"></i>
+              <span>Department of Computer Science & Engineering</span>
+            </div>
+            <div class="cib-row">
+              <i class="fas fa-map-marker-alt" style="color:#34a853"></i>
+              <span>Hassan, Karnataka, India</span>
+            </div>
+            <div class="cib-row">
+              <i class="fas fa-user-tie" style="color:#fbbc05"></i>
+              <span>Student Coordinator: Yashawantha H M</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiNUxgTFl5OUxDKGxGDlW-bbP6dp5K-6jYpWEdOtIbNw8vig/viewform" target="_blank" class="btn btn-primary btn-full" id="contact-register-btn">
+            <i class="fas fa-rocket"></i> Register for CODESTORM 2026
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top-bar">
+      <span class="ftb-dot" style="background:#4285f4"></span>
+      <span class="ftb-dot" style="background:#ea4335"></span>
+      <span class="ftb-dot" style="background:#fbbc05"></span>
+      <span class="ftb-dot" style="background:#34a853"></span>
+    </div>
+
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG on Campus RIT Hassan" class="footer-gdg-logo" />
+            <div>
+              <span class="footer-name">GDG on Campus</span>
+              <span class="footer-inst">RIT Hassan</span>
+            </div>
+          </div>
+          <p class="footer-tagline">"Learn Together. Build Together. Grow Together."</p>
+          <div class="footer-org-logos">
+            <img src="assets/Clg-Logo.jpeg" alt="RIT Hassan" title="Rajeev Institute of Technology, Hassan" />
+            <img src="assets/Dept-Logo.jpeg" alt="CSE Dept" title="Dept. of Computer Science & Engineering" />
+            <img src="assets/GDG_CLUB-logo.jpeg" alt="GDG Club" title="GDG on Campus – RIT Hassan" />
+          </div>
+        </div>
+
+        <div class="footer-links-cols">
+          <div class="footer-col">
+            <h6>Navigate</h6>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About GDG</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6>Events</h6>
+            <ul>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfiNUxgTFl5OUxDKGxGDlW-bbP6dp5K-6jYpWEdOtIbNw8vig/viewform" target="_blank">Register CODESTORM</a></li>
+              <li><a href="https://chat.whatsapp.com/IbvN7a5LEGpGqVoffjDWPw" target="_blank">Event WhatsApp Group</a></li>
+              <li><a href="https://github.com/Yashawantha26/codestorm-2026" target="_blank">GitHub Repo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h6>Connect</h6>
+            <ul>
+              <li><a href="https://gdg-rit-website.vercel.app/" target="_blank">Official Website</a></li>
+              <li><a href="https://www.instagram.com/gdg_club_rit/" target="_blank">Instagram</a></li>
+              <li><a href="https://chat.whatsapp.com/Ep2J8GpmRBoF0Fj3A5eks1" target="_blank">WhatsApp Community</a></li>
+              <li><a href="https://developers.google.com/community/gdsc-solution-challenge" target="_blank">Solution Challenge</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 GDG on Campus – Rajeev Institute of Technology, Hassan. Department of Computer Science & Engineering.</p>
+        <p>Organized with ❤️ by GDG on Campus – RIT Hassan &nbsp;|&nbsp; Student Coordinator: <strong>Yashawantha H M</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
